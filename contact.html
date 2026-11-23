@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Kampala Youth Employment Connect for information about youth employment resources">
+    <title>Contact Us | Kampala Youth Employment Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <header>
+        <h1>Kampala Youth Employment Connect</h1>
+        <p>Connecting Young People to Employment Opportunities</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="jobs.html">Find Jobs</a>
+        <a href="internships.html">Internships</a>
+        <a href="skills.html">Skills Development</a>
+        <a href="career-guidance.html">Career Guidance</a>
+        <a href="employers.html">Employers</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <img src="images/contact-support.jpg"
+     alt="A friendly customer support team"
+     class="page-image">
+     
+        <section>
+            <h2>Get in Touch</h2>
+
+            <p>
+                Do you have questions about jobs, internships or
+                skills development? Contact Kampala Youth Employment
+                Connect using the form below.
+            </p>
+
+            <p class="form-notice">
+                This is a demonstration form for the student project.
+                It will not send messages until connected to a working
+                form-processing service or backend.
+            </p>
+
+        </section>
+
+        <section class="contact-section">
+
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formMessage').textContent='Thank you! This is a demonstration. No message was sent.'; this.reset();">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email address" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Enter message subject" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6"
+                          placeholder="Write your message here"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <p id="formMessage" role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kampala Youth Employment Connect. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

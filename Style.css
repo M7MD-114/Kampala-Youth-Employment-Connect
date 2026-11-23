@@ -1,0 +1,234 @@
+/* General page styling */
+*{
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(31, 233, 240);
+    color: #333333 ;
+    line-height: 1.6;
+}
+
+/*Website header */
+header { 
+    background-color: #144b43;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0cap;
+    font-size: medium;
+}
+
+header p {
+    margin-bottom: 1px;
+    font-size: 18px;
+
+}
+
+/*Navigation menu */
+nav {
+    background-color:#16443f;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav a:hover{
+    background-color:#c0963c;
+    color: #222222;
+    border-radius: 5px;
+}
+
+/* Main content */
+main{
+    max-width:1100px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+section {
+    background-color:white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #174c45;
+    margin-top:1px;
+}
+
+/*welcome section */
+welcome{
+    text-align: center;
+    padding: 40px 25px;
+}
+
+welcome h2 {
+    font-size: 28px;
+}
+
+/*Buttons */
+button {
+    display: inline-block;
+    background-color: #c49839;
+    color:#222222;
+    text-decoration: none;
+    padding:10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #bd8e30;
+}
+
+/* Feature cards */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.features article {
+    background-color:#eaf2ef;
+    padding: 20px;
+    border-left: 5px solid #174c45;
+    border-radius: 5px;
+}
+
+.features h3 {
+    color:#174c45;
+}
+
+.features a {
+    color:  #174c45;
+    font-weight: bold;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid  #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #174c45;
+    color: white;
+}
+
+/* Forms */
+form{
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid#aaaaaa;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button{
+    background-color: #174c45;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color:  #103a35;
+}
+
+/*Footer */
+footer {
+    background-color:#103a35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*Mobile phone layout */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main{
+        padding: 10px;
+        margin: 10px auto;
+ }
+
+ section {
+    padding: 15px;
+ }
+ 
+ .features {
+    grid-template-columns: 1fr;
+ }
+
+ table {
+    font-size: 14px;
+ }
+  th,td {
+    padding: 7px;
+  }
+}
+
+.home-image {
+    width: 100%;
+    max-width: 750px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.page-image {
+    width: 100%;
+    max-width: 650px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
